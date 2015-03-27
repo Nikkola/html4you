@@ -55,6 +55,7 @@ class Sendmailer extends PHPMailer{
     }
 
 
+
     /**
      *  Метод расширяющий базовый - отправляет письмо
      *

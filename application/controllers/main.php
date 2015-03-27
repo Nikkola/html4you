@@ -6,16 +6,24 @@ class Main extends MY_Controller {
 
         if($this->is_post()){
 
-            print_r($_FILES);
-            exit;
+            $file = $_FILES['upload'];
 
-            $email = $this->input->post('email');
-            $subject = "Спасибо вам за ваш заказ";
-            $text = "Спасибо вам за ваш заказ";
+            $file_upload = $this->downloadfile($file);
 
-            $this->sendmailer->setSenderLabel('PSDTOHTML4YOU');
-            $this->sendmailer->setRecipient($email, "Заказчик");
-            $this->sendmailer->send($subject, $text);
+            if($file_upload){
+                $email = $this->input->post('email');
+                $subject = "Спасибо вам за ваш заказ";
+                $text = "Спасибо вам за ваш заказ";
+
+                $this->sendmailer->addAttachment($file_upload);
+
+                $this->sendmailer->setSenderLabel('PSDTOHTML4YOU');
+                $this->sendmailer->setRecipient($email, "Заказчик");
+                $this->sendmailer->send($subject, $text);
+                unlink($file_upload);
+            }
+
+
 
         } else {
             parent::render('index');
@@ -26,6 +34,18 @@ class Main extends MY_Controller {
 
     protected function downloadfile($file){
 
+        if(!$file['error']){
+
+            $filedist = $_SERVER['DOCUMENT_ROOT'].'/uploadfiles/'.$file['name'];
+            if(move_uploaded_file($file['tmp_name'], $filedist)){
+                return $filedist;
+            } else {
+                return false;
+            }
+
+        }
+
+        return false;
 
 
     }
