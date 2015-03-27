@@ -1,11 +1,333 @@
+/*
+    Fonts
+*/
+
+@font-face {
+    font-family: 'code_pro_black_lcregular';
+    src: url('../fonts/Code Pro Black LC-webfont.eot');
+    src: url('../fonts/Code Pro Black LC-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro Black LC-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro Black LC-webfont.woff') format('woff'),
+    url('../fonts/Code Pro Black LC-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_pro_blackregular';
+    src: url('../fonts/Code Pro Black-webfont.eot');
+    src: url('../fonts/Code Pro Black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro Black-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro Black-webfont.woff') format('woff'),
+    url('../fonts/Code Pro Black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_pro_bold_lcregular';
+    src: url('../fonts/Code Pro Bold LC-webfont.eot');
+    src: url('../fonts/Code Pro Bold LC-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro Bold LC-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro Bold LC-webfont.woff') format('woff'),
+    url('../fonts/Code Pro Bold LC-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_pro_boldregular';
+    src: url('../fonts/Code Pro Bold-webfont.eot');
+    src: url('../fonts/Code Pro Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro Bold-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro Bold-webfont.woff') format('woff'),
+    url('../fonts/Code Pro Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_pro_demoregular';
+    src: url('../fonts/Code Pro Demo-webfont.eot');
+    src: url('../fonts/Code Pro Demo-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro Demo-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro Demo-webfont.woff') format('woff'),
+    url('../fonts/Code Pro Demo-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_pro_lcregular';
+    src: url('../fonts/Code Pro LC-webfont.eot');
+    src: url('../fonts/Code Pro LC-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro LC-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro LC-webfont.woff') format('woff'),
+    url('../fonts/Code Pro LC-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_pro_light_demoregular';
+    src: url('../fonts/Code Pro Light Demo-webfont.eot');
+    src: url('../fonts/Code Pro Light Demo-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro Light Demo-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro Light Demo-webfont.woff') format('woff'),
+    url('../fonts/Code Pro Light Demo-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_pro_light_lcregular';
+    src: url('../fonts/Code Pro Light LC-webfont.eot');
+    src: url('../fonts/Code Pro Light LC-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro Light LC-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro Light LC-webfont.woff') format('woff'),
+    url('../fonts/Code Pro Light LC-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_pro_lightregular';
+    src: url('../fonts/Code Pro Light-webfont.eot');
+    src: url('../fonts/Code Pro Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro Light-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro Light-webfont.woff') format('woff'),
+    url('../fonts/Code Pro Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'code_proregular';
+    src: url('../fonts/Code Pro-webfont.eot');
+    src: url('../fonts/Code Pro-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code Pro-webfont.woff2') format('woff2'),
+    url('../fonts/Code Pro-webfont.woff') format('woff'),
+    url('../fonts/Code Pro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_black_italicRg';
+    src: url('../fonts/Solomon Sans Black Italic-webfont.eot');
+    src: url('../fonts/Solomon Sans Black Italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Black Italic-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Black Italic-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Black Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_blackregular';
+    src: url('../fonts/Solomon Sans Black-webfont.eot');
+    src: url('../fonts/Solomon Sans Black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Black-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Black-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_bold_italicbold';
+    src: url('../fonts/Solomon Sans Bold Italic-webfont.eot');
+    src: url('../fonts/Solomon Sans Bold Italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Bold Italic-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Bold Italic-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Bold Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_boldbold';
+    src: url('../fonts/Solomon Sans Bold-webfont.eot');
+    src: url('../fonts/Solomon Sans Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Bold-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Bold-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_book_italicRg';
+    src: url('../fonts/Solomon Sans Book Italic-webfont.eot');
+    src: url('../fonts/Solomon Sans Book Italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Book Italic-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Book Italic-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Book Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_bookregular';
+    src: url('../fonts/Solomon Sans Book-webfont.eot');
+    src: url('../fonts/Solomon Sans Book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Book-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Book-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_light_italicRg';
+    src: url('../fonts/Solomon Sans Light Italic-webfont.eot');
+    src: url('../fonts/Solomon Sans Light Italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Light Italic-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Light Italic-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Light Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_lightregular';
+    src: url('../fonts/Solomon Sans Light-webfont.eot');
+    src: url('../fonts/Solomon Sans Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Light-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Light-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_normal_italicRg';
+    src: url('../fonts/Solomon Sans Normal Italic-webfont.eot');
+    src: url('../fonts/Solomon Sans Normal Italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Normal Italic-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Normal Italic-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Normal Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_normalregular';
+    src: url('../fonts/Solomon Sans Normal-webfont.eot');
+    src: url('../fonts/Solomon Sans Normal-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Normal-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Normal-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Normal-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_semibold_italiRg';
+    src: url('../fonts/Solomon Sans SemiBold Italic-webfont.eot');
+    src: url('../fonts/Solomon Sans SemiBold Italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans SemiBold Italic-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans SemiBold Italic-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans SemiBold Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_semiboldregular';
+    src: url('../fonts/Solomon Sans SemiBold-webfont.eot');
+    src: url('../fonts/Solomon Sans SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans SemiBold-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans SemiBold-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans SemiBold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_thin_italicRg';
+    src: url('../fonts/Solomon Sans Thin Italic-webfont.eot');
+    src: url('../fonts/Solomon Sans Thin Italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Thin Italic-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Thin Italic-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Thin Italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'solomon_sans_thinregular';
+    src: url('../fonts/Solomon Sans Thin-webfont.eot');
+    src: url('../fonts/Solomon Sans Thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Solomon Sans Thin-webfont.woff2') format('woff2'),
+    url('../fonts/Solomon Sans Thin-webfont.woff') format('woff'),
+    url('../fonts/Solomon Sans Thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .row {
     width: 1200px;
 }
 
-.nav {
+.nav-menu-fixed {
     position: fixed;
     top: 0;
     right: 0;
+    width: 100%;
+    background: #f37f66;
+}
+
+.nav-menu-fixed > .nav {
+    float: right;
+    line-height: 109px;
+}
+
+.nav-menu-fixed .nav-link:hover > span {
+    transition: all .3s ease-in-out;
+    border-bottom: 3px solid white;
+    padding-bottom: 3px;
+
+}
+
+.logo-link {
+    float: left;
+    padding: 31px 0 16px 103px;
+}
+
+.nav-link {
+    font-family: 'code_pro_boldregular';
+    font-size: 18px;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: transparent !important;
+    color: white;
 }
 
 .header {
