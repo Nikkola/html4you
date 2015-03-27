@@ -1,22 +1,8 @@
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Тестовый шаблон</title>
-    <script src="/libs/ckeditor/ckeditor.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-</head>
+{% include '_parts/header.twig' %}
 <body>
 
-    <h1>Тестовый шаблон</h1>
-
-    {{ name }}
-
     <form action="" method="post">
-        <div>
-            {{ captcha_html| raw }}
-        </div>
-        <input type="submit" value="Отправить"/>
+        
     </form>
 
 </body>
