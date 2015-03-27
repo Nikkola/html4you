@@ -4,8 +4,29 @@ class Main extends MY_Controller {
 
     public function index(){
 
-        parent::setToData('name', 'Антон Васильевич Голомазов');
-        parent::render('index');
+        if($this->is_post()){
+
+            print_r($_FILES);
+            exit;
+
+            $email = $this->input->post('email');
+            $subject = "Спасибо вам за ваш заказ";
+            $text = "Спасибо вам за ваш заказ";
+
+            $this->sendmailer->setSenderLabel('PSDTOHTML4YOU');
+            $this->sendmailer->setRecipient($email, "Заказчик");
+            $this->sendmailer->send($subject, $text);
+
+        } else {
+            parent::render('index');
+        }
+
+    }
+
+
+    protected function downloadfile($file){
+
+
 
     }
 

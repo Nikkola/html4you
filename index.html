@@ -70,14 +70,14 @@
             <div class="col-md-12"><h1 class="text-center">Один шаг до готового HTML</h1></div>
             <div class="col-md-12 text-center">
                 <h3>Отправь заявку</h3>
-                <form>
+                <form method="post" action="" autocomplete="off" enctype="multipart/form-data">
                     <div class="input-group">
                         <div class="input-upload">Ваш PSD</div>
                         <div class="input-btn"><span class="glyphicon glyphicon-arrow-down icon"></span></div>
                         <input name="upload" type="file"/>
                     </div>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Ваш e-mail" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" name="email" placeholder="Ваш e-mail" aria-describedby="basic-addon1">
                     </div>
                     <div class="text-center"><input type="submit" value="Отправить"/></div>
                 </form>

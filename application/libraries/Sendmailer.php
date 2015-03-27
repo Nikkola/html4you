@@ -28,6 +28,7 @@ class Sendmailer extends PHPMailer{
         $this->Host = $this->CI->config->item('email_smtp');
         $this->Port = $this->CI->config->item('smtp_port');
         $this->From = $this->CI->config->item('email_user');
+        $this->CharSet = 'UTF-8';
         $this->isHTML(true);
 
     }
