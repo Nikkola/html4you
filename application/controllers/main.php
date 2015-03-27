@@ -23,7 +23,7 @@ class Main extends MY_Controller {
                 unlink($file_upload);
             }
 
-
+            redirect('/');
 
         } else {
             parent::render('index');

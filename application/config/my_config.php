@@ -2,9 +2,9 @@
 
 
 ## Настройки для почты
-$config['email_user'] = 'cesear@bk.ru'; // email с которого отправляются письма
-$config['email_pass'] = '6008252913cesar'; // пароль от почты
-$config['email_smtp'] = 'smtp.mail.ru'; // smtp почты
+$config['email_user'] = 'info@html4you.ru'; // email с которого отправляются письма
+$config['email_pass'] = 'html1234'; // пароль от почты
+$config['email_smtp'] = 'smtp.timeweb.ru'; // smtp почты
 $config['smtp_port']  = 465;
 $config['smtp_type']  = 'ssl';
 
