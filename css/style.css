@@ -1,404 +1,1070 @@
-/*
-    Fonts
-*/
-
-@font-face {
-    font-family: 'code_pro_black_lcregular';
-    src: url('../fonts/Code Pro Black LC-webfont.eot');
-    src: url('../fonts/Code Pro Black LC-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro Black LC-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro Black LC-webfont.woff') format('woff'),
-    url('../fonts/Code Pro Black LC-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/* Tools */
+/* Font variables */
+/* Color variables */
+/* Clearfix */
+.clearfix:before, .footer:before, .nav:before, .about:before, .advantages:before,
+.clearfix:after,
+.footer:after,
+.nav:after,
+.about:after,
+.advantages:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
-@font-face {
-    font-family: 'code_pro_blackregular';
-    src: url('../fonts/Code Pro Black-webfont.eot');
-    src: url('../fonts/Code Pro Black-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro Black-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro Black-webfont.woff') format('woff'),
-    url('../fonts/Code Pro Black-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+.clearfix:after, .footer:after, .nav:after, .about:after, .advantages:after {
+  clear: both;
 }
 
-@font-face {
-    font-family: 'code_pro_bold_lcregular';
-    src: url('../fonts/Code Pro Bold LC-webfont.eot');
-    src: url('../fonts/Code Pro Bold LC-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro Bold LC-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro Bold LC-webfont.woff') format('woff'),
-    url('../fonts/Code Pro Bold LC-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+.clearfix, .footer, .nav, .about, .advantages {
+  *zoom: 1;
 }
 
-@font-face {
-    font-family: 'code_pro_boldregular';
-    src: url('../fonts/Code Pro Bold-webfont.eot');
-    src: url('../fonts/Code Pro Bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro Bold-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro Bold-webfont.woff') format('woff'),
-    url('../fonts/Code Pro Bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/* Layout */
+.ul-list-inline li {
+  display: inline-block;
 }
 
-@font-face {
-    font-family: 'code_pro_demoregular';
-    src: url('../fonts/Code Pro Demo-webfont.eot');
-    src: url('../fonts/Code Pro Demo-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro Demo-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro Demo-webfont.woff') format('woff'),
-    url('../fonts/Code Pro Demo-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/* Wordpress alignment */
+/* Base */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
-@font-face {
-    font-family: 'code_pro_lcregular';
-    src: url('../fonts/Code Pro LC-webfont.eot');
-    src: url('../fonts/Code Pro LC-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro LC-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro LC-webfont.woff') format('woff'),
-    url('../fonts/Code Pro LC-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
 }
 
-@font-face {
-    font-family: 'code_pro_light_demoregular';
-    src: url('../fonts/Code Pro Light Demo-webfont.eot');
-    src: url('../fonts/Code Pro Light Demo-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro Light Demo-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro Light Demo-webfont.woff') format('woff'),
-    url('../fonts/Code Pro Light Demo-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
 }
 
-@font-face {
-    font-family: 'code_pro_light_lcregular';
-    src: url('../fonts/Code Pro Light LC-webfont.eot');
-    src: url('../fonts/Code Pro Light LC-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro Light LC-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro Light LC-webfont.woff') format('woff'),
-    url('../fonts/Code Pro Light LC-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
 }
 
-@font-face {
-    font-family: 'code_pro_lightregular';
-    src: url('../fonts/Code Pro Light-webfont.eot');
-    src: url('../fonts/Code Pro Light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro Light-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro Light-webfont.woff') format('woff'),
-    url('../fonts/Code Pro Light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
 }
 
-@font-face {
-    font-family: 'code_proregular';
-    src: url('../fonts/Code Pro-webfont.eot');
-    src: url('../fonts/Code Pro-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Code Pro-webfont.woff2') format('woff2'),
-    url('../fonts/Code Pro-webfont.woff') format('woff'),
-    url('../fonts/Code Pro-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
 }
 
-@font-face {
-    font-family: 'solomon_sans_black_italicRg';
-    src: url('../fonts/Solomon Sans Black Italic-webfont.eot');
-    src: url('../fonts/Solomon Sans Black Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Black Italic-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Black Italic-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Black Italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
 }
 
-@font-face {
-    font-family: 'solomon_sans_blackregular';
-    src: url('../fonts/Solomon Sans Black-webfont.eot');
-    src: url('../fonts/Solomon Sans Black-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Black-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Black-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Black-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
 }
 
-@font-face {
-    font-family: 'solomon_sans_bold_italicbold';
-    src: url('../fonts/Solomon Sans Bold Italic-webfont.eot');
-    src: url('../fonts/Solomon Sans Bold Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Bold Italic-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Bold Italic-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Bold Italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
 }
 
-@font-face {
-    font-family: 'solomon_sans_boldbold';
-    src: url('../fonts/Solomon Sans Bold-webfont.eot');
-    src: url('../fonts/Solomon Sans Bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Bold-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Bold-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Bold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
 }
 
-@font-face {
-    font-family: 'solomon_sans_book_italicRg';
-    src: url('../fonts/Solomon Sans Book Italic-webfont.eot');
-    src: url('../fonts/Solomon Sans Book Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Book Italic-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Book Italic-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Book Italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
 }
 
-@font-face {
-    font-family: 'solomon_sans_bookregular';
-    src: url('../fonts/Solomon Sans Book-webfont.eot');
-    src: url('../fonts/Solomon Sans Book-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Book-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Book-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Book-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-@font-face {
-    font-family: 'solomon_sans_light_italicRg';
-    src: url('../fonts/Solomon Sans Light Italic-webfont.eot');
-    src: url('../fonts/Solomon Sans Light Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Light Italic-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Light Italic-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Light Italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
 }
 
-@font-face {
-    font-family: 'solomon_sans_lightregular';
-    src: url('../fonts/Solomon Sans Light-webfont.eot');
-    src: url('../fonts/Solomon Sans Light-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Light-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Light-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Light-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
 }
 
-@font-face {
-    font-family: 'solomon_sans_normal_italicRg';
-    src: url('../fonts/Solomon Sans Normal Italic-webfont.eot');
-    src: url('../fonts/Solomon Sans Normal Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Normal Italic-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Normal Italic-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Normal Italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
-@font-face {
-    font-family: 'solomon_sans_normalregular';
-    src: url('../fonts/Solomon Sans Normal-webfont.eot');
-    src: url('../fonts/Solomon Sans Normal-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Normal-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Normal-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Normal-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+sup {
+  top: -0.5em;
 }
 
-@font-face {
-    font-family: 'solomon_sans_semibold_italiRg';
-    src: url('../fonts/Solomon Sans SemiBold Italic-webfont.eot');
-    src: url('../fonts/Solomon Sans SemiBold Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans SemiBold Italic-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans SemiBold Italic-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans SemiBold Italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+sub {
+  bottom: -0.25em;
 }
 
-@font-face {
-    font-family: 'solomon_sans_semiboldregular';
-    src: url('../fonts/Solomon Sans SemiBold-webfont.eot');
-    src: url('../fonts/Solomon Sans SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans SemiBold-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans SemiBold-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans SemiBold-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
 }
 
-@font-face {
-    font-family: 'solomon_sans_thin_italicRg';
-    src: url('../fonts/Solomon Sans Thin Italic-webfont.eot');
-    src: url('../fonts/Solomon Sans Thin Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Thin Italic-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Thin Italic-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Thin Italic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
 }
 
-@font-face {
-    font-family: 'solomon_sans_thinregular';
-    src: url('../fonts/Solomon Sans Thin-webfont.eot');
-    src: url('../fonts/Solomon Sans Thin-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Solomon Sans Thin-webfont.woff2') format('woff2'),
-    url('../fonts/Solomon Sans Thin-webfont.woff') format('woff'),
-    url('../fonts/Solomon Sans Thin-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 1em 40px;
 }
 
-.row {
-    width: 1200px;
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
 }
 
-.nav-menu-fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background: #f37f66;
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
 }
 
-.nav-menu-fixed > .nav {
-    float: right;
-    line-height: 109px;
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
 }
 
-.nav-menu-fixed .nav-link:hover > span {
-    transition: all .3s ease-in-out;
-    border-bottom: 3px solid white;
-    padding-bottom: 3px;
-
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
 }
 
-.logo-link {
-    float: left;
-    padding: 31px 0 16px 103px;
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+button {
+  overflow: visible;
 }
 
-.nav-link {
-    font-family: 'code_pro_boldregular';
-    font-size: 18px;
-    color: white;
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
 }
 
-.nav-link:hover {
-    background-color: transparent !important;
-    color: white;
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
 }
-.wrap {
-    width: 100%;
-    background: url("..//images/header_fon.jpg");
-    background-size: 100% 100%;
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
 }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+html, body, .wrapper, .container {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin-top: 0;
+}
+
 .header {
-    width: 100%;
-    margin-top: 40px;
-    height: 700px;
+  height: 100%;
 }
 
-.header h1, .header h3 {
-    color: #f7f7f7;
-    line-height: 1.5;
-    font-size: 40px;
-    padding: 100px 0;
-    width: 600px;
-    margin:  auto;
+.section-name {
+  font-family: 'code_proregular';
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
 }
-.header h2 {
-
+.section-name_white {
+  color: white;
+}
+.section-name_black {
+  color: black;
 }
 
-form {
-    width: 600px;
+.section-name {
+  padding: 18px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-name {
+    padding: 36px 0;
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .section {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .section-name {
+    padding: 51px 0;
+    font-size: 54px;
+  }
+}
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url("/fonts/SourceSansPro-Regular-webfont.eot");
+  src: url("/fonts/SourceSansPro-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/SourceSansPro-Regular-webfont.woff2") format("woff2"), url("/fonts/SourceSansPro-Regular-webfont.woff") format("woff"), url("/fonts/SourceSansPro-Regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'code_proregular';
+  src: url("/fonts/Code Pro-webfont.eot");
+  src: url("/fonts/Code Pro-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Code Pro-webfont.woff2") format("woff2"), url("/fonts/Code Pro-webfont.woff") format("woff"), url("/fonts/Code Pro-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'solomon_sans_bookregular';
+  src: url("/fonts/Solomon Sans Book-webfont.eot");
+  src: url("/fonts/Solomon Sans Book-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Solomon Sans Book-webfont.woff2") format("woff2"), url("/fonts/Solomon Sans Book-webfont.woff") format("woff"), url("/fonts/Solomon Sans Book-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'solomon_sans_semiboldregular';
+  src: url("/fonts/Solomon Sans SemiBold-webfont.eot");
+  src: url("/fonts/Solomon Sans SemiBold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Solomon Sans SemiBold-webfont.woff2") format("woff2"), url("/fonts/Solomon Sans SemiBold-webfont.woff") format("woff"), url("/fonts/Solomon Sans SemiBold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'code_pro_boldregular';
+  src: url("/fonts/Code Pro Bold-webfont.eot");
+  src: url("/fonts/Code Pro Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Code Pro Bold-webfont.woff2") format("woff2"), url("/fonts/Code Pro Bold-webfont.woff") format("woff"), url("/fonts/Code Pro Bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Layout */
+.footer {
+  background: #323131;
+  color: #fff;
+  font-family: 'source_sans_proregular', Arial, serif;
+  font-size: 18px;
+}
+.footer-copy {
+  line-height: 101px;
+  float: left;
+}
+
+.footer__icons {
+  display: table;
+  float: right;
+  height: 101px;
+}
+
+.footer__icons-item {
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 10px;
+}
+.footer__icons-item a {
+  display: block;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: url("/img/background.png");
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: table;
+}
+.header-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'code_pro_boldregular', Arial, serif;
+}
+.header-text {
+  font-size: 12px;
+  font-family: 'code_proregular', Arial, serif;
+}
+.header-name, .header-text {
+  margin: 0;
+}
+
+.header__section {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.btn-up {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin: auto;
+  display: none;
+}
+
+.btn-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-name {
+    font-size: 36px;
+  }
+  .header-text {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header {
+    height: 100%;
+  }
+  .header-name {
+    font-size: 72px;
+  }
+  .header-text {
+    font-size: 36px;
+  }
+  .header .btn-up {
+    display: block;
+  }
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #f37f66;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'code_pro_boldregular', Arial, serif;
+}
+
+.nav__list {
+  padding: 0;
+}
+.nav__list-item span {
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+  .nav {
+    left: 100%;
+  }
+  .nav__list-item {
+    margin-bottom: 3px;
+  }
+  .nav__list-item:hover span {
+    padding-bottom: 1px;
+    border-bottom: 2px solid white;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    font-size: 12px;
+  }
+
+  .nav__list {
+    float: none;
     margin: auto;
+  }
+  .nav__list-item {
+    text-align: center;
+    display: inline-block;
+    width: -webkit-calc(20% - 5px);
+    width: calc(20% - 5px);
+  }
+  .nav__list-item span:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+  }
+  .nav__list-link {
+    display: inline-block;
+    line-height: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .nav {
+    font-size: 18px;
+    display: block;
+  }
+  .nav-logo {
+    display: block;
+    float: left;
+    margin: 26px 0 11px 6.25%;
+  }
+
+  .nav__list {
+    width: auto;
+    float: right;
+    margin-right: 104px;
+  }
+  .nav__list-item {
+    display: inline-block;
+    margin-left: 36px;
+  }
+  .nav__list-item:hover span {
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+  }
+  .nav__list-link {
+    display: inline-block;
+    line-height: 106px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .nav__list {
+    margin-right: 15px;
+  }
+}
+.about {
+  margin-bottom: 100px;
+}
+
+.about__section {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.about__section-psd {
+  position: relative;
+  background: url("/img/psd.png");
+  width: 543px;
+}
+.about__section-psd:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -33.5px;
+  bottom: 0;
+  margin: auto;
+}
+.about__section-html {
+  background: url("/img/html.png");
+  width: 439px;
+}
+.about__section-html, .about__section-psd {
+  margin: auto;
+  height: 283px;
+  margin-bottom: 20px;
+}
+.about__section-text {
+  text-align: center;
+}
+
+.about__section-text {
+  font-size: 24px;
+  font-family: 'solomon_sans_bookregular', Arial, serif;
+}
+
+.services {
+  background: #00aeef;
+}
+
+.services__section__list {
+  padding-bottom: 107px;
+}
+
+.services__section {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  width: 250px;
+  margin-right: 19px;
+  background: #fff;
+  vertical-align: top;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  min-height: 270px;
+}
+
+.services__section-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.services__wrapper {
+  height: 79px;
+  position: relative;
+  margin: 22px auto 37px;
+}
+
+.services__section-paragraph {
+  font-size: 14px;
+  font-family: 'solomon_sans_bookregular' , Arial, serif;
+}
+
+.services__section-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'solomon_sans_semiboldregular' , Arial, serif;
+}
+
+@media only screen and (max-width: 480px) {
+  .services__section {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .services__section__list {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .services__section {
+    margin-bottom: 10px;
+  }
+}
+.advantages {
+  margin-bottom: 10px;
+}
+
+.advantages__section {
+  width: 50%;
+  float: left;
+}
+
+.advantages__list {
+  margin: auto;
+  width: 442px;
+}
+
+.advantages__list-item {
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 85px;
+  padding-left: 66px;
+  font-family: 'solomon_sans_semiboldregular' , Arial, serif;
+}
+.advantages__list-item:before {
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .advantages__section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .advantages__list-item {
+    font-size: 16px;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .advantages__list-item {
+    font-size: 12px;
+  }
+}
+.feedback {
+  background: #f37f66;
+  padding-bottom: 95px;
+  font-family: 'solomon_sans_bookregular' , Arial, serif;
+}
+
+.feedback__form {
+  width: 462px;
+  margin: auto;
 }
 
 .input-group {
-    border-radius: 3px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin-bottom: 30px;
+  position: relative;
+  background: #fff;
+  display: table;
+  width: 100%;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.input-group input {
+  border: none;
+  display: table-cell;
+  width: 100%;
+  font-size: 14px;
+  padding: 23px 15px;
+  color: #323131;
+}
+.input-group input:-moz-placeholder {
+  color: #323131;
+}
+.input-group input::-moz-placeholder {
+  color: #323131;
+}
+.input-group input:-ms-input-placeholder {
+  color: #323131;
+}
+.input-group input::-webkit-input-placeholder {
+  color: #323131;
+}
+.input-group input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.input-group-addon {
+  position: relative;
+  display: table-cell;
+  width: 40px;
+}
+.input-group-addon:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
 }
 
-.input-upload {
-    display: table-cell;
-    width: 100%;
-    border: 1px solid black;
-    border-right: none;
-    text-align: left;
-    vertical-align: middle;
+.upload-psd {
+  line-height: 62px;
+  margin-left: 15px;
+  color: #323131;
 }
 
-.input-btn {
-    position: relative;
-    display: table-cell;
-    width: 125px;
-    height: 28px;
-    background: white;
-    border-radius: 0 3px 3px 0;
-    float: right;
-    border: 1px solid black;
+.submit {
+  margin-top: 60px;
+  text-align: center;
 }
 
-.icon {
-    vertical-align: middle;
+input[type="submit"] {
+  font-size: 20px;
+  color: #fff;
+  background: #db5941;
+  text-transform: uppercase;
+  padding: 21px 15px;
+  border: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
-input[name="upload"] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    opacity: 0;
+/* Modules */
+.linkedin, .behance, .youtube, .instagram, .deviantart, .dribble, .tw, .fb, .input-group-addon_email:before, .input-group-addon_people:before, .about__section-psd:before, .btn-up, .services__section-img_responsive, .services__section-img_email, .advantages__list-item:before, .services__section-img_browser, .input-group-addon_cloud:before, .services__section-img_cms {
+  background: url(/img/sprites.png) no-repeat;
 }
 
-.copyright {
-    float: right;
+.linkedin {
+  background-position: -105px -35px;
+  width: 35px;
+  height: 35px;
+}
+
+.behance {
+  background-position: -105px 0;
+  width: 35px;
+  height: 35px;
+}
+
+.youtube {
+  background-position: -70px -35px;
+  width: 35px;
+  height: 35px;
+}
+
+.instagram {
+  background-position: -70px 0;
+  width: 35px;
+  height: 35px;
+}
+
+.deviantart {
+  background-position: -35px -35px;
+  width: 35px;
+  height: 35px;
+}
+
+.dribble {
+  background-position: 0 -35px;
+  width: 35px;
+  height: 35px;
+}
+
+.tw {
+  background-position: -35px 0;
+  width: 35px;
+  height: 35px;
+}
+
+.fb {
+  background-position: 0 0;
+  width: 35px;
+  height: 35px;
+}
+
+.input-group-addon_email:before {
+  background-position: -203px -25px;
+  width: 14px;
+  height: 15px;
+}
+
+.input-group-addon_people:before {
+  background-position: -184px -50px;
+  width: 10px;
+  height: 17px;
+}
+
+.about__section-psd:before {
+  background-position: -228px -87px;
+  width: 77px;
+  height: 54px;
+}
+
+.btn-up {
+  background-position: -354px -6px;
+  width: 138px;
+  height: 138px;
+}
+
+.services__section-img_responsive {
+  background-position: -223px 0;
+  width: 65px;
+  height: 79px;
+}
+
+.services__section-img_email {
+  background-position: -140px 0;
+  width: 54px;
+  height: 38px;
+}
+
+.advantages__list-item:before {
+  background-position: -295px -1px;
+  width: 52px;
+  height: 39px;
+}
+
+.services__section-img_browser {
+  background-position: -54px -70px;
+  width: 168px;
+  height: 47px;
+}
+
+.input-group-addon_cloud:before {
+  background-position: -151px -50px;
+  width: 18px;
+  height: 14px;
+}
+
+.services__section-img_cms {
+  background-position: 0 -70px;
+  width: 54px;
+  height: 54px;
 }
