@@ -50,20 +50,22 @@
   <div class="wrapper">
     <div class="container">
       <div class="header">
-        <div class="header__section">
-          <h1 class="header-name">Конвертор PSD в  HTML</h1>
-          <h3 class="header-text">Преврати свой PSD файл в HTML код быстро и качественно</h3>
-        </div>
-        <div class="btn-up">
-          <a href="#" class="btn-link"></a>
+        <div data-section="header" class="section">
+          <div class="header__section">
+            <h1 class="header-name">Конвертор PSD в  HTML</h1>
+            <h3 class="header-text">Преврати свой PSD файл в HTML код быстро и качественно</h3>
+          </div>
+          <div class="btn-up">
+            <a href="#" class="btn-link"></a>
+          </div>
         </div>
       </div>
       <div class="about">
-        <div class="section">
+        <div data-section="about" class="section">
           <h1 class="section-name section-name section-name_black">Что это такое?</h1>
           <div class="about__section">
             <div class="about__section-psd"></div>
-            <div class="about__section-text">Вы рисуете PSD</div>
+            <div class="about__section-tex">Вы рисуете PSD</div>
           </div>
           <div class="about__section">
             <div class="about__section-html"></div>
@@ -72,7 +74,7 @@
         </div>
       </div>
       <div class="services">
-        <div class="section">
+        <div data-section="services" class="section">
           <h1 class="section-name section-name section-name_white">Что мы делаем?</h1>
           <ul class="services__section__list">
             <li class="services__section">
@@ -115,7 +117,7 @@
         </div>
       </div>
       <div class="advantages">
-        <div class="section">
+        <div data-section="advantages" class="section">
           <h1 class="section-name section-name section-name_black">Наши Приемущества</h1>
           <div class="advantages__section">
             <ul class="advantages__list">
@@ -134,7 +136,7 @@
         </div>
       </div>
       <div class="feedback">
-        <div class="section">
+        <div data-section="feedback" class="section">
           <h1 class="section-name section-name section-name_white">оДИН ШАГ ДО ГОТОВОЙ html СТРАНИЦЫ</h1>
           <div class="feedback__form">
             <form method="post" action="">
@@ -155,9 +157,10 @@
           </div>
         </div>
       </div>
+      <div class="showmenu"><a href="#"><span class="showmenu-line"></span></a>
+      </div>
       <div class="footer">
         <div class="section">
-          <div class="footer-copy">&copy; Copyright 2015. Allright Reserved</div>
           <ul class="footer__icons">
             <li class="footer__icons-item">
               <a href="#" class="fb"></a>
@@ -184,6 +187,7 @@
               <a href="#" class="linkedin"></a>
             </li>
           </ul>
+          <div class="footer-copy">&copy; Copyright 2015. Allright Reserved</div>
         </div>
       </div>
     </div>
@@ -195,15 +199,15 @@
       </a>
     </div>
     <ul class="nav__list">
-      <li class="nav__list-item"><a href="#" class="nav__list-link"><span>ГЛАВНАЯ</span></a>
+      <li class="nav__list-item"><a href="#" id="header" class="nav__list-link"><span>ГЛАВНАЯ</span></a>
       </li>
-      <li class="nav__list-item"><a href="#" class="nav__list-link"><span>ЧТО ЭТО ТАКОЕ?</span></a>
+      <li class="nav__list-item"><a href="#" id="about" class="nav__list-link"><span>ЧТО ЭТО ТАКОЕ?</span></a>
       </li>
-      <li class="nav__list-item"><a href="#" class="nav__list-link"><span>ЧТО МЫ ДЕЛАЕМ?</span></a>
+      <li class="nav__list-item"><a href="#" id="services" class="nav__list-link"><span>ЧТО МЫ ДЕЛАЕМ?</span></a>
       </li>
-      <li class="nav__list-item"><a href="#" class="nav__list-link"><span>НАШИ ПРИЕМУЩЕСТВА</span></a>
+      <li class="nav__list-item"><a href="#" id="advantages" class="nav__list-link"><span>НАШИ ПРИЕМУЩЕСТВА</span></a>
       </li>
-      <li class="nav__list-item"><a href="#" class="nav__list-link"><span>ЗАГРУЗКА PSD</span></a>
+      <li class="nav__list-item"><a href="#" id="feedback" class="nav__list-link"><span>ЗАГРУЗКА PSD</span></a>
       </li>
     </ul>
   </div>
@@ -211,6 +215,7 @@
   <!-- bower:js -->
   <script src="bower_components/jquery/jquery.js"></script>
   <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+  <script src="bower_components/waypoints/lib/jquery.waypoints.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:js js/main.js -->
