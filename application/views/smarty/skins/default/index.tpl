@@ -10,12 +10,17 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="container">
-        <div class="row header">
-            <div class="col-md-12 text-center">
-                <p>
-                    Конвертируй свой PSD в HTML Быстро и качественно
-                </p>
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="row header">
+                <div class="col-md-12 text-center">
+                    <h1>
+                        КОНВЕРТАТОР PSD В HTML
+                    </h1>
+                    <h3>
+                        Преврати свой PSD в HTML код быстро и качественно
+                    </h3>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -70,14 +75,14 @@
             <div class="col-md-12"><h1 class="text-center">Один шаг до готового HTML</h1></div>
             <div class="col-md-12 text-center">
                 <h3>Отправь заявку</h3>
-                <form method="post" enctype="multipart/form-data" action="">
+                <form method="post" action="" autocomplete="off" enctype="multipart/form-data">
                     <div class="input-group">
                         <div class="input-upload">Ваш PSD</div>
                         <div class="input-btn"><span class="glyphicon glyphicon-arrow-down icon"></span></div>
                         <input name="upload" type="file"/>
                     </div>
                     <div class="input-group">
-                        <input type="text" name="email" class="form-control" placeholder="Ваш e-mail" aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" name="email" placeholder="Ваш e-mail" aria-describedby="basic-addon1">
                     </div>
                     <div class="text-center"><input type="submit" value="Отправить"/></div>
                 </form>
@@ -96,12 +101,13 @@
         </div>
         <div class="copyright">PSD to HTML. 2015</div>
     </div>
-    <div class="nav-menu">
+    <div class="nav-menu nav-menu-fixed">
+        <a href="#" class="logo-link"><img src="img/logo.png" alt=""/></a>
         <ul class="nav nav-pills">
-            <li class="nav-items"><a class="nav-link" href="#">Что это такое?</a></li>
-            <li class="nav-items"><a class="nav-link" href="#">Что мы делаем?</a></li>
-            <li class="nav-items"><a class="nav-link" href="#">Наши преимущества</a></li>
-            <li class="nav-items"><a class="nav-link" href="#">Загрузи свой PSD</a></li>
+            <li class="nav-items"><a class="nav-link" href="#"><span>Что это такое?</span></a></li>
+            <li class="nav-items"><a class="nav-link" href="#"><span>Что мы делаем?</span></a></li>
+            <li class="nav-items"><a class="nav-link" href="#"><span>Наши преимущества</span></a></li>
+            <li class="nav-items"><a class="nav-link" href="#"><span>Загрузи свой PSD</span></a></li>
         </ul>
     </div>
 </div>

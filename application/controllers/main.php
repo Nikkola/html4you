@@ -6,6 +6,10 @@ class Main extends MY_Controller {
 
         if($this->is_post()){
 
+            ini_set('post_max_size', '200M');
+            ini_set('upload_max_filesize', '200M');
+            set_time_limit(600);
+
             $file = $_FILES['upload'];
 
             $file_upload = $this->downloadfile($file);
