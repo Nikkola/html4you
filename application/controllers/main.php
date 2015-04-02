@@ -18,15 +18,17 @@ class Main extends MY_Controller {
 
                 // Отправка письма пользователю
                 $email = $this->input->post('email');
+                $name = $this->input->post("name");
+
                 $subject = "Спасибо вам за ваш заказ";
                 $text = "Спасибо вам за ваш заказ";
                 $this->sendmailer->setSenderLabel('PSDTOHTML4YOU');
-                $this->sendmailer->setRecipient($email, "Заказчик");
+                $this->sendmailer->setRecipient($email, $name);
                 $this->sendmailer->send($subject, $text);
 
                 // Письмо администратору
-                $subject = "Новый заказ на верстку проекта";
-                $text = "Пришел заказ на верстку с почты <a href='mailto:{$email}'>{$email}</a>";
+                $subject = "Новый заказ на верстку проекта от ".$name;
+                $text = "Пришел заказ на верстку с почты <a href='mailto:{$email}'>{$email}</a> от {$name}";
                 $this->sendmailer->setSenderLabel('PSDTOHTML4YOU');
                 $this->sendmailer->setRecipient($this->config->item('email_user'), "Администратор");
                 $this->sendmailer->addAttachment($file_upload);
